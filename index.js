@@ -49,7 +49,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let year = "1999";
+parseInt(year);
+console.log(year);
 
 
 
@@ -61,10 +63,11 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+let a=1;
+let b=2;
+function multiply(a, b){
+    return a * b;
+    }
 
 
 
@@ -77,9 +80,9 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+let age=14;
+function dogYears(age){
+    return age*7;
 }
 
 
@@ -137,9 +140,25 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
+if (computer<= 0.23){
+  computer= 'rock';
+}else if (computer <= 0.83){
+  computer = 'paper';
+}else if (computer > 0.83){
+  computer = 'scissors';
+}
 
 function game(user, computer){
-    /*add your code here*/
+  if (user === computer) {
+    return "it's a tie";
+  } else if (user === "paper" && computer === "rock"){
+    return "you win!";
+  } else if (user === "scissors" && computer === "paper"){
+    return "you win!";
+  } else if (user === "rock" && computer === "scissors"){
+    return "you win!";
+  } else return "you lose!";
 }
   
   
@@ -154,10 +173,9 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(km){
+  return km * 0.621371;
+}
 
 
 
@@ -168,10 +186,9 @@ Using the feet function below do the following:
   2. Convert the number of cm to feet
   3. Return number of feet
 */
-
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+function feet(cmtofeet){
+  return cmtofeet / 30.48;
+}
  
 
 
