@@ -17,6 +17,9 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 20
+  if (votingAge > 18)
+  console.log(true);
 
 
 
@@ -30,7 +33,8 @@ Do the following:
 
    HINT: no function required
 */
-
+let firstName = 'Luna';
+let lastName = 'Tauer';
 
 
 
