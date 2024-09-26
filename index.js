@@ -17,6 +17,9 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 20
+  if (votingAge > 18)
+  console.log(true);
 
 
 
@@ -30,7 +33,10 @@ Do the following:
 
    HINT: no function required
 */
-
+let var1=5;
+let var2=6;
+if(var1>var2)
+console.log(5)
 
 
 
@@ -45,7 +51,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let year = "1999";
+parseInt(year);
+console.log(year);
 
 
 
@@ -57,10 +65,11 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+let a=1;
+let b=2;
+function multiply(a, b){
+    return a * b;
+    }
 
 
 
@@ -73,9 +82,9 @@ Do the following:
    2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
    3. Return the newly calculated age
 */
-
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+let age=14;
+function dogYears(age){
+    return age*7;
 }
 
 
@@ -133,9 +142,25 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
+if (computer<= 0.23){
+  computer= 'rock';
+}else if (computer <= 0.83){
+  computer = 'paper';
+}else if (computer > 0.83){
+  computer = 'scissors';
+}
 
 function game(user, computer){
-    /*add your code here*/
+  if (user === computer) {
+    return "it's a tie";
+  } else if (user === "paper" && computer === "rock"){
+    return "you win!";
+  } else if (user === "scissors" && computer === "paper"){
+    return "you win!";
+  } else if (user === "rock" && computer === "scissors"){
+    return "you win!";
+  } else return "you lose!";
 }
   
   
@@ -150,10 +175,9 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(km){
+  return km * 0.621371;
+}
 
 
 
@@ -164,10 +188,9 @@ Using the feet function below do the following:
   2. Convert the number of cm to feet
   3. Return number of feet
 */
-
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+function feet(cmtofeet){
+  return cmtofeet / 30.48;
+}
  
 
 
@@ -181,8 +204,8 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(startnum4){
+  '${4} bottles of soda on the wall, ${4} bottles of soda, take one down pass it around ${4-1} bottles of soda on the wall'     
   }
 
 
@@ -201,9 +224,19 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
-  }
+function grade(mygrade){
+  if (mygrade >=90 && mygrade <=100)
+    return ("you got an A");
+  }  else if (mygrade >=80 && mygrade <=89)
+     return ('you got a B');
+  }  else if (mygrade >= 70 && mygrade <=79)
+    return ("you got a C");
+  }  else if (mygrade >= 60 && mygrade <= 69)
+    return ("you got a D");
+     else {
+       return ("you got an F");
+     }
+
   
   
 
